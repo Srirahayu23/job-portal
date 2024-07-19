@@ -25,10 +25,9 @@ class ApplyJobResource extends Resource
     {
         return $form
             ->schema([
-                // Forms\Components\TextInput::make('job_id')->maxLength(100)->required()->columnSpanFull(),
-                // Forms\Components\TextInput::make('applicant_id')->maxLength(100)->required()->columnSpanFull(),
                 Forms\Components\Select::make('job_id')
-                    ->options(Job::all()->pluck('name', 'id'))
+                // sesuaikan dengan field yg ada di db
+                    ->options(Job::all()->pluck('job_name', 'id'))
                     ->columnSpanFull()
                     ->required(),
                 Forms\Components\Select::make('applicant_id')

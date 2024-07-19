@@ -15,4 +15,14 @@ class ApplyJob extends Model
     {
         return $this->belongsTo(ApplyJob::class);
     }
+
+    public function job()
+    {
+        return $this->belongsTo(Job::class);
+    }
+
+    public function applicant()
+    {
+        return $this->belongsTo(Applicant::class);
+    }
 }

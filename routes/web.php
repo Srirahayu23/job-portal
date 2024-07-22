@@ -8,13 +8,13 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('administrator/dashboard', [ApplicantController::class, 'index'])->name('admin.apply-job');
-
-Route::get('guest', [GuestController::class, 'index']);
+// Sebelum user loginn
 Route::get('about', [GuestController::class, 'about']);
 Route::get('contact', [GuestController::class, 'contact']);
 Route::get('/job_listing', [GuestController::class, 'job_listing']);
 Route::get('/job_details', [GuestController::class, 'job_details']);
+Route::get('/job-details/:id', [GuestController::class, 'jobDetails']);
+Route::get('/form_apply', [GuestController::class, 'form_apply']);
+Route::post('/form_apply', [GuestController::class, 'form_apply']);
 
-//untuk frontend
-// Route::get('/', [GuestController::class, 'index'])->name('home');
+// untuk admin

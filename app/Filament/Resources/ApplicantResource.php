@@ -9,6 +9,7 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Actions\ExportBulkAction;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -31,7 +32,7 @@ class ApplicantResource extends Resource
                 Forms\Components\TextInput::make('lastEducation')->maxLength(100)->required()->columnSpanFull(),
                 Forms\Components\TextInput::make('ipk')->maxLength(100)->required()->columnSpanFull(),
                 Forms\Components\TextInput::make('skill')->maxLength(100)->required()->columnSpanFull(),
-                Forms\Components\FileUpload::make('ktp')->image()->maxSize('2048')
+                Forms\Components\FileUpload::make('ktp')->maxSize('2048')
                     ->directory('ktp')
                     ->deleteUploadedFileUsing(function ($record) {
                         if ($record && $record->ktp) {
@@ -42,7 +43,7 @@ class ApplicantResource extends Resource
                         return $file->store('ktp', 'public');
                     })
                     ->required(),
-                Forms\Components\FileUpload::make('cv')->image()->maxSize('2048')
+                Forms\Components\FileUpload::make('cv')->maxSize('2048')
                     ->directory('cv')
                     ->deleteUploadedFileUsing(function ($record) {
                         if ($record && $record->cv) {
@@ -92,6 +93,7 @@ class ApplicantResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
+                ExportBulkAction::make()
             ]);
     }
 

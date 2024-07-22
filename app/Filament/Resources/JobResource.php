@@ -42,7 +42,8 @@ class JobResource extends Resource
                         return $file->store('image', 'public');
                     })
                     ->required(),
-                Forms\Components\RichEditor::make('desc')->columnSpanFull()->required(),
+                Forms\Components\TextInput::make('desc')->maxLength(100)->required()->columnSpanFull(),
+                // Forms\Components\RichEditor::make('desc')->columnSpanFull()->required(),
             ]);
     }
 

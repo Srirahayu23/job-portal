@@ -49,7 +49,7 @@
                 <span class="flaticon-tour"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Design & Creative</a></h5>
+                <h5><a href="/job_listing">Design & Creative</a></h5>
                 <span>(653)</span>
               </div>
             </div>
@@ -60,7 +60,7 @@
                 <span class="flaticon-cms"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Design & Development</a></h5>
+                <h5><a href="/job_listing">Design & Development</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -71,7 +71,7 @@
                 <span class="flaticon-report"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Sales & Marketing</a></h5>
+                <h5><a href="/job_listing">Sales & Marketing</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -82,7 +82,7 @@
                 <span class="flaticon-app"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Mobile Application</a></h5>
+                <h5><a href="/job_listing">Mobile Application</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -93,7 +93,7 @@
                 <span class="flaticon-helmet"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Construction</a></h5>
+                <h5><a href="/job_listing">Construction</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -104,7 +104,7 @@
                 <span class="flaticon-high-tech"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Information Technology</a></h5>
+                <h5><a href="/job_listing">Information Technology</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -115,7 +115,7 @@
                 <span class="flaticon-real-estate"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Real Estate</a></h5>
+                <h5><a href="/job_listing">Real Estate</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -126,7 +126,7 @@
                 <span class="flaticon-content"></span>
               </div>
               <div class="services-cap">
-                <h5><a href="/list_job">Content Writer</a></h5>
+                <h5><a href="/job_listing">Content Writer</a></h5>
                 <span>(658)</span>
               </div>
             </div>
@@ -137,7 +137,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="browse-btn2 text-center mt-50">
-              <a href="/list_job" class="border-btn2">Browse All Sectors</a>
+              <a href="/job_listing" class="border-btn2">Browse All Sectors</a>
             </div>
           </div>
         </div>
